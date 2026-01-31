@@ -83,7 +83,7 @@ export default function Navbar() {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       >
-        <source src="/info1.mp3" type="audio/mpeg" />
+        <source src="/info3.mpeg" type="audio/mpeg" />
       </audio>
 
       {/* Navbar */}
