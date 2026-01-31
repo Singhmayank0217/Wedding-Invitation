@@ -25,7 +25,7 @@ export default function WeddingDetails() {
 
   const details = [
     {
-      icon: '📅',
+      icon: '💍',
       label: 'Date',
       value: '21st April, 2026',
       subtitle: 'Save the Date',
