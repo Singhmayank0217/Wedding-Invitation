@@ -82,7 +82,7 @@ export default function CountdownSection() {
             <div className="glass rounded-3xl px-12 py-16 text-center animate-scale-in shadow-2xl">
               <div className="text-8xl mb-6 animate-heartbeat">🎊💕🎉</div>
               <h2 className="font-playfair text-6xl text-gradient font-bold mb-4">Happy Wedding Day!</h2>
-              <p className="font-lora text-2xl text-foreground">Priti & Roushan</p>
+              <p className="font-lora text-2xl text-foreground">Priti & Roshan</p>
               <p className="font-lora text-lg text-muted-foreground mt-4">Two hearts, one love, forever together</p>
             </div>
           </div>

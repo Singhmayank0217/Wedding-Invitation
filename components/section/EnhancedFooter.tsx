@@ -157,7 +157,7 @@ export default function EnhancedFooter() {
           {/* Names in calligraphy style */}
           <div className="space-y-2">
             <h2 className="font-playfair text-5xl md:text-6xl text-primary font-semibold">
-              Priti & Roushan
+              Priti & Roshan
             </h2>
             <p className="font-lora text-lg text-foreground/60 tracking-wider">
               United in love, forever grateful

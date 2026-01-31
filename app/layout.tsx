@@ -17,7 +17,7 @@ const lora = Lora({
 })
 
 export const metadata: Metadata = {
-  title: 'Priti & Roushan - Wedding Invitation',
+  title: 'Priti & Roshan - Wedding Invitation',
   description: 'Join us for our wedding celebration on a special day filled with love and joy',
   generator: 'v0.app',
   icons: {

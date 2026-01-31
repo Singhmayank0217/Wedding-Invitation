@@ -137,7 +137,7 @@ export default function Hero() {
                 <div className="h-[2px] w-20 bg-gradient-to-l from-transparent to-muted-foreground/30" />
               </div>
               <h2 className="font-playfair text-6xl sm:text-8xl text-primary tracking-wide drop-shadow-lg">
-                Roushan
+                Roshan
               </h2>
             </div>
             

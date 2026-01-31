@@ -26,7 +26,7 @@ export default function RSVPSection() {
   const handleRSVPClick = () => {
     // WhatsApp RSVP - update with your actual number
     const phoneNumber = '+919876543210' // Replace with actual WhatsApp number
-    const message = 'Hi Priti & Roushan! 💕 I would love to RSVP for your beautiful wedding on 21st April, 2026! Looking forward to celebrating with you both! '
+    const message = 'Hi Priti & Roshan! 💕 I would love to RSVP for your beautiful wedding on 21st April, 2026! Looking forward to celebrating with you both! '
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappLink, '_blank')
   }

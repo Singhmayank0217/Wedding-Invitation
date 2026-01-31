@@ -63,7 +63,7 @@ export default function NoteFromUs() {
 
           {/* Signature */}
           <p className="font-playfair text-2xl sm:text-3xl text-primary font-light mt-6">
-            Priti & Roushan
+            Priti & Roshan
           </p>
         </div>
 
