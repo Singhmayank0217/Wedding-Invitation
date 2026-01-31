@@ -11,21 +11,32 @@ export default function Navbar() {
 
   // Auto-play music on page load
   useEffect(() => {
-    if (!hasAutoPlayed && audioRef.current) {
-      const playPromise = audioRef.current.play()
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setIsPlaying(true)
-            setHasAutoPlayed(true)
-          })
-          .catch(() => {
-            // Autoplay blocked - user will need to click play
-            console.log('Autoplay blocked - user interaction required')
-          })
-      }
-    }
-  }, [hasAutoPlayed])
+  const startMusic = () => {
+    if (!audioRef.current) return
+
+    audioRef.current.volume = 1
+    audioRef.current.play()
+      .then(() => {
+        setIsPlaying(true)
+      })
+      .catch(() => {})
+
+    window.removeEventListener('click', startMusic)
+    window.removeEventListener('touchstart', startMusic)
+    window.removeEventListener('keydown', startMusic)
+  }
+
+  window.addEventListener('click', startMusic, { once: true })
+  window.addEventListener('touchstart', startMusic, { once: true })
+  window.addEventListener('keydown', startMusic, { once: true })
+
+  return () => {
+    window.removeEventListener('click', startMusic)
+    window.removeEventListener('touchstart', startMusic)
+    window.removeEventListener('keydown', startMusic)
+  }
+}, [])
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -72,7 +83,7 @@ export default function Navbar() {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       >
-        <source src="/info.mp3" type="audio/mpeg" />
+        <source src="/info1.mp3" type="audio/mpeg" />
       </audio>
 
       {/* Navbar */}
